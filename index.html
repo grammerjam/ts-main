@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 4 square boxes -->
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <!-- show date and time -->
+    <footer>
+        <label for="date-input">Start Date and Time:</label>
+        <input type="date" id="date-input" name="date-input">
+        <input type="time" id="tme-input" name="time-input">
+        <button onclick="switchDate()">Click me</button>
+        <div id="end-date" style="visibility:hidden">
+            End Date and Time: 5/5/2023 9:00 AM
+        </div>
+    </footer>
+</body>
+
+<!-- make end-date visible  -->
+<script>
+    function switchDate(){
+        var date = document.getElementById("end-date");
+        if(date.style.visibility==="hidden"){
+            date.style.visibility="visible";
+        }
+       
+    }
+</script>
+</html>
