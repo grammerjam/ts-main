@@ -19,23 +19,10 @@
 
     <!-- show date and time -->
     <footer>
-        <label for="date-input">Start Date and Time:</label>
-        <input type="date" value="2023-05-04">
-        <input type="time" value="09:00">
-        <button onclick="switchDate()">Click me</button>
-        <div id="end-date" style="visibility:hidden">
-            End Date and Time: 5/04/2023 1:50pm
-        </div>
+        Start Date/Time: 5/4/2023 10AM <br>
+        End Date/Time: 5/4/2023 2:20PM
+        
     </footer>
 </body>
 
-<!-- make end-date visible  -->
-<script>
-    function switchDate(){
-        var date = document.getElementById("end-date");
-        if(date.style.visibility==="hidden"){
-            date.style.visibility="visible";
-        }
-    }
-</script>
 </html>
