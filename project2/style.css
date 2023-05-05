@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+}
+
+main {
+    background-color: salmon;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.green_button {
+    background-color: green;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border-color: green;
+    color: white;
+}
+
+.main_box p {
+    background-color: salmon;
+    color: white;
+    width: 60%;
+    min-width: 400px;
+}
+
+.main_box h2{
+    color: white;
+    font-size: 3em;
+    margin: 0;
+    padding-top:10%;
+    text-align: left;
+    width: 100%;
+}
+
+.main_box {
+    background-color: salmon;
+    height: 500px;
+    padding-left: 10%;
+    width:60%;
+}
+
+
+/* HEADER */
+.banner {
+    text-align: center;
+    background-color: green;
+    padding: 11px;
+    color: white;
+}
+
+header ul {
+    position: absolute;
+    list-style-type: none;
+    padding-top: 2%;
+    width: 35%;
+}
+
+header li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 2%;
+}
+
+header h1 {
+    color: white;
+    background-color: salmon;
+    font-size: 3em;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    width: 100%;
+    padding-top: 2%;
+}
+
+.right_nav {
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    right: 0px;
+    margin-right: 8%;
+    padding-top: 2%;
+}
+
+.right_nav a{
+    margin-right: 10%;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background-color: salmon;
+    color:white;
+}
