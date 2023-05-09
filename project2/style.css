@@ -1,9 +1,16 @@
 body {
     margin: 0;
+    min-width: 800px;
 }
 
 main {
     background-color: salmon;
+}
+
+main img {
+    width: 800px;
+    position: absolute;
+    right: 0px;
 }
 
 a {
@@ -23,7 +30,7 @@ a {
     background-color: salmon;
     color: white;
     width: 60%;
-    min-width: 400px;
+    min-width: 500px;
 }
 
 .main_box h2{
@@ -51,19 +58,6 @@ a {
     color: white;
 }
 
-header ul {
-    position: absolute;
-    list-style-type: none;
-    padding-top: 2%;
-    width: 35%;
-}
-
-header li {
-    display: inline-block;
-    text-decoration: none;
-    margin: 0 2%;
-}
-
 header h1 {
     color: white;
     background-color: salmon;
@@ -72,16 +66,32 @@ header h1 {
     margin: auto;
     display: inline-block;
     width: 100%;
-    padding-top: 2%;
+    padding-top: 18px;
 }
 
+/*Left Nav bar*/
+header ul {
+    position: absolute;
+    list-style-type: none;
+    padding-top: 20px;
+    width: 35%;
+    min-width: 300px;
+}
+
+header li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 2%;
+}
+
+/*Right Nav bar*/
 .right_nav {
     position: absolute;
     display: inline-block;
     width: 200px;
     right: 0px;
-    margin-right: 8%;
-    padding-top: 2%;
+    margin-right: 7%;
+    padding-top: 22px;
 }
 
 .right_nav a{
