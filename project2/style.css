@@ -1,16 +1,27 @@
+/*GENERAL*/
 body {
     margin: 0;
     min-width: 800px;
 }
 
-main {
-    background-color: salmon;
+h1 {
+    padding-top: 5%;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
 }
 
-main img {
-    width: 800px;
-    position: absolute;
-    right: 0px;
+h3 {
+    margin-top: 0;
+    margin-bottom: 2%;
+}
+
+.primary_image {
+    width:700px;
+    height: 400px;
+    margin-left: 1%;
+    margin-top: 50px;
+    vertical-align:top;
 }
 
 a {
@@ -26,28 +37,14 @@ a {
     color: white;
 }
 
-.main_box p {
+.orange_button {
     background-color: salmon;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border-color: salmon;
     color: white;
-    width: 60%;
-    min-width: 500px;
 }
 
-.main_box h2{
-    color: white;
-    font-size: 3em;
-    margin: 0;
-    padding-top:10%;
-    text-align: left;
-    width: 100%;
-}
-
-.main_box {
-    background-color: salmon;
-    height: 500px;
-    padding-left: 10%;
-    width:60%;
-}
 
 
 /* HEADER */
@@ -65,7 +62,6 @@ header h1 {
     text-align: center;
     margin: auto;
     display: inline-block;
-    width: 100%;
     padding-top: 18px;
 }
 
@@ -86,21 +82,152 @@ header li {
 
 /*Right Nav bar*/
 .right_nav {
-    position: absolute;
-    display: inline-block;
+    float: right;
     width: 200px;
-    right: 0px;
     margin-right: 7%;
-    padding-top: 22px;
 }
 
 .right_nav a{
     margin-right: 10%;
 }
 
-/* FOOTER */
+
+
+/*MAIN ROW*/
+.main_row {
+    background-color: salmon;
+    height: 90vh;
+    padding-left: 10%;
+    width:90%;
+}
+
+.main_row p {
+    background-color: salmon;
+    color: white;
+    width: 40%;
+    min-width: 500px;
+}
+
+.main_row h2{
+    color: white;
+    font-size: 3em;
+    margin: 0;
+    padding-top:10%;
+    text-align: left;
+    width: 100%;
+}
+
+.review {
+    width: 250px;
+    padding-top: 3%;
+}
+
+.hand {
+    float: right;
+    width: 400px;
+}
+
+/*ROW 1*/
+#row1 {
+    text-align: center;
+    background-color: white;
+}
+
+.box {
+    display: inline-block;
+    width: 200px;
+    padding: 1%;
+}
+
+.box p {
+    display: inline-block;
+    margin-top: 0;
+}
+
+.box img {
+    width:100px;
+}
+
+
+
+/*ROW 2*/
+#row2 {
+    text-align: center;
+}
+
+#row2 h3 {
+    display: inline-block;
+    vertical-align:top ;
+    margin-top: 20px;
+}
+
+.right_col {
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.right_col img {
+    width: 60px;
+}
+
+
+
+/*ROW 3*/
+#row3 {
+    text-align: center;
+}
+
+#row3 img {
+    width: 400px;
+}
+
+
+
+/*ROW 4*/
+#row4 {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.left_col h1 {
+    text-align: left;
+}
+
+.left_col {
+    display: inline-block;
+    width: 40%;
+    text-align: left;
+}
+
+.left_col p {
+    width: 90%;
+    margin-right: 0;
+    text-align: left;
+}
+
+
+
+/*FOOTER*/
 footer {
     text-align: center;
-    background-color: salmon;
-    color:white;
+    font-size: 2em;
+    padding-top: 4%;
+    padding-bottom: 1%;
 }
+
+
+
+/*MOBILE*/
+@media (max-width: 900px) {
+    .box{
+      width: 40%;
+    }
+  }
+
+@media (max-width: 800px) {
+    .box{
+      display: block;
+      margin: auto;
+    }
+  }
+  
