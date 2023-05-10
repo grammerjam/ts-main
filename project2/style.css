@@ -22,6 +22,7 @@ h3 {
     margin-left: 1%;
     margin-top: 50px;
     vertical-align:top;
+    border-radius: 2%;
 }
 
 a {
@@ -64,6 +65,36 @@ header h1 {
     display: inline-block;
     padding-top: 18px;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; 
+    padding: 0 20px;
+    background-color: salmon;
+    padding-top: 3%;
+  }
+  
+  .left-content {
+    margin-right: 20px;
+    padding-left: 5%;
+  }
+
+  .left-content a{
+    margin-right: 20px;
+  }
+
+  .middle-content h1{
+    padding: 0;
+    text-align: center;
+    margin-left: -30%;
+  }
+  
+  .right-content{
+    margin-left: 20px;
+    padding-right: 5%;
+  }
 
 /*Left Nav bar*/
 header ul {
@@ -133,41 +164,81 @@ header li {
     background-color: white;
 }
 
+#row1 h1{
+    padding-top: 4%;
+}
+
 .box {
     display: inline-block;
     width: 200px;
     padding: 1%;
+    padding-top: 0%;
 }
 
-.box p {
+.box p h3{
     display: inline-block;
     margin-top: 0;
+    text-align: center;
 }
 
 .box img {
     width:100px;
+    text-align: center;
 }
 
 
 
 /*ROW 2*/
 #row2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     text-align: center;
+}
+
+.left-image{
+    width: 100%;
+    margin-left: 3%;
+    margin-top: 50px;
+    vertical-align:top;
+    
+}
+
+#row2 h1{
+    text-align: left;
 }
 
 #row2 h3 {
     display: inline-block;
     vertical-align:top ;
     margin-top: 20px;
+    padding: 0;
+    margin-bottom: 0%;
 }
 
 .right_col {
     display: inline-block;
-    margin-left: 5%;
+    margin-left: 3%;
+    text-align: left;
+    padding: 3px;
+    margin-right: 8%;
+}
+
+.right_col h1{
+    margin-bottom: -10px;
+}
+
+.right_col p{
+   width: calc(100% -320px);
+   margin-top: 10px;
+   margin-bottom: 0%;
 }
 
 .right_col img {
-    width: 60px;
+    width: 24px;
+    float: left;
+    padding-top: 15px;
+    margin-right: 10px;
 }
 
 
