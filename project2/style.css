@@ -56,7 +56,6 @@ a {
     border-radius: 5px;
     border-color: salmon;
     color: #F9F9F6;
-    
 }
 
 
@@ -251,8 +250,8 @@ nav {
     background-color: #F9F9F6;
 }
 
+
 #row3 img {
-    width: 100%;
     background-color: #F9F9F6;
 }
 
@@ -388,3 +387,56 @@ footer {
     }
   }
   
+
+
+  /*CAROUSEL*/
+  .carousel {
+    position: relative;
+    width: 1110px;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+.carousel-slide img {
+    width: 370px;
+  }
+
+  .carousel-container {
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide {
+    display: flex;
+  }
+  
+  .carousel-control {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 40px;
+    font-size: 2rem;
+    color: #000;
+    background: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #8d8d8d;
+    color: #8d8d8d;
+    border-radius: 50%;
+  }
+  
+  .carousel-control.prev {
+    margin-right: 10px;
+    padding-left: 0.6rem;
+    padding-right: 0.8rem;
+  }
+  
+  .carousel-control.next {
+    margin-right: 50px;
+    padding-left: 0.8rem;
+    padding-right: 0.6rem;
+  }
+
+  .trustpilot
+  {
+    width: 145px;
+    margin-right: 50px;
+  }
