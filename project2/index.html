@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <script type="text/javascript" src="carousel.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <!--
@@ -18,12 +18,20 @@
         <div class = "banner">FREE SHIPPING IN THE UK</div>
 
         <nav>
-            <div class="left-content">
-              <a href="#">Home</a>
-              <a href="#">FAQ</a>
-              <a href="#">Pricing</a>
-              <a href="#">Refer a friend</a>
+            <div class="left-content" id="nav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="links">
+                <a href="#">Home</a>
+                <a href="#">FAQ</a>
+                <a href="#">Pricing</a>
+                <a href="#">Refer a friend</a>
+                <a class="hamburger" href="#">Login</a>
+              </div>
             </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                <i class="fa fa-bars"></i>
+            </a>
 
             <div class="middle-content">
                 <h1>SPARK</h1>
