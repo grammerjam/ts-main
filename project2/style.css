@@ -183,6 +183,7 @@ nav {
     width: 200px;
     padding: 1%;
     padding-top: 0%;
+    vertical-align: top;
 }
 
 .box p h3{
@@ -418,11 +419,6 @@ footer {
 
   /* Banner portion */
     
-  .main_row {
-    height: auto;
-    padding: 5% 5%;
-    width: 100%;
-  }
   
   .main_row p {
     width: 100%;
@@ -439,6 +435,11 @@ footer {
     width: 100%;
     margin-bottom: 5%;
   }
+
+  .box p {
+    width: 60%;
+    margin: 0 auto;
+  }
   
   .box img {
     width: 80px;
@@ -446,6 +447,12 @@ footer {
   
   .left-image {
     margin: 0;
+    width: 70%;
+  }
+
+  .bottom-image{
+    margin-right: 0%;
+    width: 70%;
   }
   
 
