@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const slideContainer = document.querySelector('.carousel-container');
   const prevButton = document.querySelector('.carousel-control.prev');
   const nextButton = document.querySelector('.carousel-control.next');
-  const slideWidth = slideContainer.clientWidth;
+  // const slideWidth = slideContainer.clientWidth;
+  const slideWidth = 740;
   const slideCount = slideContainer.children[0].childElementCount;
   const slidesPerPage = 3;
   let currentIndex = 0;
@@ -16,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   nextButton.addEventListener('click', function() {
     console.log(currentIndex)
-    if (currentIndex <= Math.ceil(slideCount / slidesPerPage) - 2) {
+    if (currentIndex <= Math.ceil(slideCount / slidesPerPage) - 1) {
       currentIndex++;
     } else {
       currentIndex = 0;
