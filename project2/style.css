@@ -382,28 +382,15 @@ footer {
 
 
 /* MOBILE VIEW */
-@media (max-width: 900px) {
-  .box{
-    width: 40%;
-    display: inline-block;
-    text-align: center;
-  }
-}
 
-@media (max-width: 770px) {
-  .box{
-    display: block;
-    margin: auto;
+
+@media screen and (max-width: 800px) {
+  body {
+    min-width: unset;
   }
 
   .carousel, .carousel-control{
     display: none;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  body {
-    min-width: unset;
   }
 
   
@@ -432,7 +419,7 @@ footer {
   }
   
   .box {
-    width: 100%;
+    width: auto;
     margin-bottom: 5%;
   }
 
@@ -511,7 +498,6 @@ footer {
     display: block;
     padding-top: 15px;
     width: 10%;
-  
   }
 
   .button-login{
