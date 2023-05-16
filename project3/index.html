@@ -3,16 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Project 3 -  Team Name</title>
+  <title>Project 3 -  Team Spark</title>
 
-  <style>
-
-  </style>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
+
+
+<!-- 
+  TODO: -Fix button layout
+        -Make form center
+        -Fix gradiant to be viewed in mobile view
+        -add validation using bootstrap
+        -add team name
+        -add logo(maybe)
+        -add 2 cards
+        -add second page for confirmation
+-->
+
+<!-- 
+  Helpful liks
+  https://getbootstrap.com/docs/5.3/layout/breakpoints/
+  https://getbootstrap.com/docs/5.3/forms/layout/
+  https://getbootstrap.com/docs/5.3/forms/validation/
+
+
+ -->
 <body>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- column for gradiant -->
+      <!-- TIP: add a class to div to style content -->
+      <div class="col-md-4 order-sm-1 gradiant">
+        1
+      </div>
+
+      <!-- column for forum  -->
+      <div class="col-md-8 order-sm-2 align-items-center">
+        <form>
+          <div class="col">
+            <label for="inputCardHolder" class="form-label">CARDHOLDER NAME</label>
+            <input type="text" class="form-control" placeholder="e.g Jane Appleseed" aria-label="Cardholder name" id="inputCardHolder">
+          </div>
+          
+          <label for="inputCardNumber" class="form-label">CARD NUMBER</label>
+          <input type="text" class="form-control" placeholder=" e.g. 1234 5678 9123 0000" aria-label="Card number" id="inputCardNumber">
+
+          <label for="inputDate" class="form-label">EXP. DATE (MM/YY)</label>
+          <input type="text" class="form-control-sm" placeholder="MM" aria-label="Month" id="inputDate">
+          <input type="text" class="form-control-sm" placeholder="YY" aria-label="Year" id="inputDate">
+          
+          <label for="inputCvc" class="form-label">CVC</label>
+          <input type="text" class="form-control-sm" placeholder="e.g. 123" aria-label="cvc" id="inputCvc">
+          
+          <div class="col-8">
+            <button type="submit" class="btn btn-primary">Confirm</button>
+          </div>
+        </div>
+      </form>
+      
+    </div>
+    
+  </div>
 
   0000 0000 0000 0000
   Jane Appleseed
@@ -40,6 +95,9 @@
   Thank you!
   We've added your card details
   Continue
-  
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
+
 </html>

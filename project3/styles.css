@@ -1,0 +1,20 @@
+/* Imported font */
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url(SpaceGrotesk-VariableFont_wght.ttf)
+  }
+  
+/* Global font size */
+*{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}
+
+body{
+    font-size: 18px;
+   
+}
+
+.gradiant{
+    background: linear-gradient(278deg, hsl(279, 6%, 55%), hsl(278, 68%, 11%));   
+}
