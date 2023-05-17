@@ -12,9 +12,48 @@
 
 body{
     font-size: 18px;
-   
 }
 
 .gradiant{
     background: linear-gradient(278deg, hsl(279, 6%, 55%), hsl(278, 68%, 11%));   
+}
+
+/*FORM*/
+
+#inputCardHolder {
+    width: 15rem;    
+}
+
+#inputCardNumber {
+    width: 15rem;    
+}
+
+#inputDate {
+    width: 5rem;
+}
+
+#inputCvc {
+    width: 5rem;
+}
+
+form {
+    margin-top: 15%;
+    margin-left: 40%;
+}
+
+.btn-primary {
+    width: 60% !important;
+    background-color: hsl(278, 68%, 11%) !important;
+    border-color: hsl(278, 68%, 11%) !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    margin-bottom: 0.5% !important;
+    margin-top: 0.7rem;
+}
+
+.cvc {
+    margin-left: 22px;
 }
