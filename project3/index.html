@@ -31,38 +31,55 @@
 
  -->
 <body>
-
   <div class="container-fluid">
     <div class="row">
       <!-- column for gradiant -->
       <!-- TIP: add a class to div to style content -->
       <div class="col-md-4 order-sm-1 gradiant">
-        <div>
-          <img src = "images/bg-card-front.png" id="cardFront">
-          <p id ="cardImageNumber" class="cardTextTest">aaaaa</p>
-          <p id ="cardImageHolder" class="cardTextTest">aaaaa</p>
-          <p id ="cardImageCvc" class="cardTextTest">aaaaa</p>
-          <p id ="cardImageMonth" class="cardTextTest">aaaaa</p>
-          <p id ="cardImageYear" class="cardTextTest">aaaaa</p>
+        
+      <div>
+        <img src = "images/bg-card-front.png" id="cardFront">
+        <img src = "images/bg-card-back.png" id="cardBack">
+        <p id ="cardImageNumber">0000 0000 0000 0000</p>
+        <p id ="cardImageHolder">JANE APPLESEED</p>
+        <div id = "cardImageDate">
+          <p id ="cardImageMonth">00/</p>
+          <p id ="cardImageYear">00</p>
         </div>
+        <p id ="cardImageCvc">000</p>
+      </div>
       </div>
 
       <!-- column for forum  -->
       <div class="col-md-8 order-sm-2 align-items-center">
-        <form>
+        <form class="needs-validation" onsubmit="submitForm()" novalidate>
           <div class="col">
             <label for="inputCardHolder" class="form-label">CARDHOLDER NAME</label>
-            <input type="text" class="form-control" placeholder="e.g Jane Appleseed" aria-label="Cardholder name" id="inputCardHolder">
+            <input type="text" class="form-control" placeholder="e.g Jane Appleseed" aria-label="Cardholder name" id="inputCardHolder" required>
+            <div class="invalid-feedback">
+              Please input first and last name.
+            </div>
           </div>
           
           <label for="inputCardNumber" class="form-label">CARD NUMBER</label>
-          <input type="text" class="form-control" placeholder=" e.g. 1234 5678 9123 0000" aria-label="Card number" id="inputCardNumber">
+          <input type="text" class="form-control" placeholder=" e.g. 1234 5678 9123 0000" aria-label="Card number" id="inputCardNumber" required>
+          <div class="invalid-feedback">
+            Please input a valid card number.
+          </div>
           <label for="inputDate" class="form-label">EXP. DATE (MM/YY)</label>
           <label for="inputCvc" class="form-label cvc">CVC</label><br>
-          <input type="text" class="form-control-sm" placeholder="MM" aria-label="Month" id="inputMonth" class="inputMonth">
-          <input type="text" class="form-control-sm" placeholder="YY" aria-label="Year" id="inputYear" class="inputYear">
-          <input type="text" class="form-control-sm" placeholder="e.g. 123" aria-label="cvc" id="inputCvc">
-          
+          <input type="text" class="form-control-sm" placeholder="MM" aria-label="Month" id="inputMonth" required>
+          <div class="invalid-feedback">
+            Invalid month.
+          </div>
+          <input type="text" class="form-control-sm" placeholder="YY" aria-label="Year" id="inputYear" required>
+          <div class="invalid-feedback">
+            Invalid year.
+          </div>
+          <input type="text" class="form-control-sm" placeholder="e.g. 123" aria-label="cvc" id="inputCvc" required>
+          <div class="invalid-feedback">
+            Invalid CVC.
+          </div>
           <div class="col-8">
             <button type="submit" class="btn btn-primary">Confirm</button>
           </div>
