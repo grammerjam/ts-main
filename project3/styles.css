@@ -18,8 +18,23 @@ body{
     background: linear-gradient(278deg, hsl(279, 6%, 55%), hsl(278, 68%, 11%));   
 }
 
-/*FORM*/
 
+/*CARD*/
+#cardFront {
+    position:fixed;
+    left: 10%;
+    margin-top: 5%;
+}
+
+.cardTextTest {
+    position: relative; 
+    margin-left: 150px; 
+    color: white; 
+    top: 80px; 
+    position: relative;
+}
+
+/*FORM*/
 #inputCardHolder {
     width: 15rem;    
 }
@@ -37,7 +52,7 @@ body{
 }
 
 form {
-    margin-top: 15%;
+    margin-top: 25%;
     margin-left: 40%;
 }
 
