@@ -21,17 +21,54 @@ body{
 
 /*CARD*/
 #cardFront {
-    position:fixed;
-    left: 10%;
-    margin-top: 5%;
+    position:absolute;
+    left: 180px;
+    margin-top: 130px;
+    width: 300px;
 }
 
-.cardTextTest {
-    position: relative; 
-    margin-left: 150px; 
+#cardBack {
+    position:absolute;
+    left: 220px;
+    margin-top: 300px;
+    width: 300px;
+}
+
+#cardImageNumber {
+    position: absolute; 
+    margin-left: 200px; 
     color: white; 
-    top: 80px; 
+    top: 220px; 
+    letter-spacing: .19em;
+}
+
+#cardImageHolder {
+    position: absolute; 
+    margin-left: 200px; 
+    color: white; 
+    top: 265px; 
+    font-size: .6em;
+}
+
+#cardImageDate {
+    position: absolute;
+    margin-left: 400px;
+    top: 215px;
+    font-size: .6em;
+}
+
+#cardImageDate p {
     position: relative;
+    display: inline;
+    color: white; 
+    top: 50px; 
+}
+
+#cardImageCvc {
+    position: absolute;
+    margin-left: 420px;
+    top: 370px;
+    color: white;
 }
 
 /*FORM*/
@@ -43,7 +80,11 @@ body{
     width: 15rem;    
 }
 
-#inputDate {
+#inputMonth {
+    width: 5rem;
+}
+
+#inputYear {
     width: 5rem;
 }
 
