@@ -1,29 +1,62 @@
 // get input-form elements
 var inputCardNumber = document.getElementById("inputCardNumber");
 var inputCardHolder = document.getElementById("inputCardHolder");
-var inputCvc = document.getElementById("inputCvc");
 var inputMonth = document.getElementById("inputMonth");
 var inputYear = document.getElementById("inputYear");  
+var inputCvc = document.getElementById("inputCvc");
  
 // add listeners to input-form elements
 inputCardNumber.addEventListener("input", updateCard);
 inputCardHolder.addEventListener("input", updateCard);
-inputCvc.addEventListener("input", updateCard);
 inputMonth.addEventListener("input", updateCard);
 inputYear.addEventListener("input", updateCard);
+inputCvc.addEventListener("input", updateCard);
 
 // get card image text elements
 var cardImageNumber = document.getElementById("cardImageNumber");
 var cardImageHolder = document.getElementById("cardImageHolder");
-var cardImageCvc = document.getElementById("cardImageCvc");
 var cardImageMonth = document.getElementById("cardImageMonth");
 var cardImageYear = document.getElementById("cardImageYear");
+var cardImageCvc = document.getElementById("cardImageCvc");
 
 // update the card image text element on listener update
 function updateCard() {
-    cardImageNumber.innerHTML = inputCardNumber.value;
-    cardImageHolder.innerHTML = inputCardHolder.value;
-    cardImageCvc.innerHTML = inputCvc.value;
-    cardImageMonth.innerHTML = inputMonth.value;
-    cardImageYear.innerHTML = inputYear.value;
+    if(inputCardNumber.value != ""){
+        cardImageNumber.innerHTML = inputCardNumber.value;
+    }
+    if(inputCardHolder.value != ""){
+        cardImageHolder.innerHTML = inputCardHolder.value;
+    }
+    if(inputMonth.value != ""){
+        cardImageMonth.innerHTML = inputMonth.value + '/';
+    }
+    if(inputYear.value != ""){
+        cardImageYear.innerHTML = inputYear.value;
+    }
+    if(inputCvc.value != ""){
+        cardImageCvc.innerHTML = inputCvc.value;
+    }
 }
+
+
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+
+  
