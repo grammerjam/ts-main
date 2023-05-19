@@ -22,19 +22,21 @@ var cardImageCvc = document.getElementById("cardImageCvc");
 // update the card image text element on listener update
 function updateCard() {
     if(inputCardNumber.value != ""){
-        cardImageNumber.innerHTML = inputCardNumber.value;
+      // add spaces every 4 characters in cc field
+      inputCardNumber.value = inputCardNumber.value.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ')
+      cardImageNumber.innerHTML = inputCardNumber.value;
     }
     if(inputCardHolder.value != ""){
-        cardImageHolder.innerHTML = inputCardHolder.value;
+      cardImageHolder.innerHTML = inputCardHolder.value.toUpperCase();
     }
     if(inputMonth.value != ""){
-        cardImageMonth.innerHTML = inputMonth.value + '/';
+      cardImageMonth.innerHTML = inputMonth.value + '/';
     }
     if(inputYear.value != ""){
-        cardImageYear.innerHTML = inputYear.value;
+      cardImageYear.innerHTML = inputYear.value;
     }
     if(inputCvc.value != ""){
-        cardImageCvc.innerHTML = inputCvc.value;
+      cardImageCvc.innerHTML = inputCvc.value;
     }
 }
 
@@ -58,5 +60,3 @@ function updateCard() {
         }, false)
       })
   })()
-
-  
