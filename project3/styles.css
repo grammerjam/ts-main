@@ -105,25 +105,6 @@ body{
   }
 
 /*FORM*/
-#inputCardHolder {
-    width: 15rem;    
-}
-
-#inputCardNumber {
-    width: 15rem;    
-}
-
-#inputMonth {
-    width: 5rem;
-}
-
-#inputYear {
-    width: 5rem;
-}
-
-#inputCvc {
-    width: 5rem;
-}
 
 form {
     margin-top: 200px;
@@ -131,11 +112,18 @@ form {
 }
 
 .btn-primary {
-    width: 250px !important;
     background-color: hsl(278, 68%, 11%) !important;
     border-color: hsl(278, 68%, 11%) !important;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    
+}
+
+.yearComponent{
+    margin-left: -4rem !important; 
+}
+
+.CvcComponent{
+    margin-left: -3rem !important; 
+
 }
 
 .form-label {
@@ -143,6 +131,6 @@ form {
     margin-top: 0.7rem;
 }
 
-.cvc {
-    margin-left: 22px;
+footer{
+    text-align: center;
 }
