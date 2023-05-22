@@ -39,11 +39,11 @@
     <div class="row">
       <!-- column for gradiant -->
       <!-- TIP: add a class to div to style content -->
-      <div class="col-md-4 order-md-1 ps-0 pe-0 ">
+      <div class="col-md-4 order-md-1 g-0 ">
         <img src="images/bg-main-desktop.png" class="img-fluid float-start d-none d-md-block" alt="">
         <img src="images/bg-main-mobile.png" class="d-none d-sm-block d-md-none img-fluid w-100 float-start " alt="">
 
-        <div class="col-md-4 ms-3 align-middle order-md-2">
+        <div class="col-md-4 ms-3  order-md-2">
           <img src= "images/bg-card-front.png" id="cardFront">
           <p id ="cardImageNumber">0000 0000 0000 0000</p>
           <p id ="cardImageHolder">JANE APPLESEED</p>
@@ -52,7 +52,7 @@
           <p class = "bigCircle"></p>
           <p class = "smallCircle"></p>
         </div>
-        <div class="col-md-4 order-md-1">
+        <div class="col-md-4 order-md-3">
           <img src = "images/bg-card-back.png" id="cardBack">
           <p id ="cardImageCvc">000</p>
         </div>    
@@ -75,38 +75,42 @@
             Please input a valid card number
           </div>
 
-          <div class="row d-flex justify-content-middle px-5">
-            <div class="col-4  ">
-          
-              <label for="inputDate" class="form-label">EXP. DATE</label>
-              <input type="text" class="form-control w-50 input-sm " placeholder="MM" id="inputMonth" maxlength="2" required>
+          <div class="container-fluid">
+            <div class="row row-cols-3  g-0 buttons3 ">
+              <div class="col g-0 ">
+            
+                <label for="inputDate" class="form-label ">EXP.DATE</label>
+                <input type="text" class="form-control " placeholder="MM" id="inputMonth" maxlength="2" required>
 
-              <div class="invalid-feedback">
-                Invalid month
-              </div>
-            </div>
-
-            <div class="col-4 yearComponent px-0">
-              
-              <label for="inputYear" class="form-label ">(MM/YY)</label>
-              <input type="text" class="form-control w-50 " placeholder="YY" id="inputYear" maxlength="2" required>
-              <div class="invalid-feedback">
-                Invalid year
-              </div>
-            </div>
-              
-              <div class="col-4  CvcComponent ">
-                <label for="inputCvc" class="form-label ">CVC</label>
-                <input type="text" class="form-control" placeholder="e.g. 123" id="inputCvc" maxlength="3" required>
                 <div class="invalid-feedback">
-                  Invalid CVC
+                  Invalid month
                 </div>
               </div>
-          
+
+              <div class="col g-0">
+                
+                <label for="inputYear" class="form-label ">(MM/YY)</label>
+                <input type="text" class="form-control " placeholder="YY" id="inputYear" maxlength="2" required>
+                <div class="invalid-feedback">
+                  Invalid year
+                </div>
+              </div>
+                
+                <div class="col g-0">
+                  <label for="inputCvc" class="form-label ">CVC</label>
+                  <input type="text" class="form-control " placeholder="e.g. 123" id="inputCvc" maxlength="3" required>
+                  <div class="invalid-feedback">
+                    Invalid CVC
+                  </div>
+                </div>
+            
+            </div>
           </div>
 
           <div class="col-9 ms-5">
             <a type="submit" href="complete.html" class="btn btn-primary w-100 my-4">Confirm</a>
+            <button type="submit" href="complete.html" class="btn btn-primary w-100 my-4">Confirm</button>
+
           </div>
         </div>
       </form>
