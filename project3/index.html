@@ -16,7 +16,6 @@
         -Make form center
         -Fix gradiant to be viewed in mobile view
         -add validation using bootstrap
-        -add team name
         -add logo(maybe)
         -add second page for confirmation
 -->
@@ -33,7 +32,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col position-absolute d-flex justify-content-center">
-        Team Spark
+        <p class="h1">Team Spark</p>
       </div>
     </div>
 
@@ -80,7 +79,7 @@
             <div class="col-4  ">
           
               <label for="inputDate" class="form-label">EXP. DATE</label>
-              <input type="text" class="form-control w-50 " placeholder="MM" id="inputMonth" maxlength="2" required>
+              <input type="text" class="form-control w-50 input-sm " placeholder="MM" id="inputMonth" maxlength="2" required>
 
               <div class="invalid-feedback">
                 Invalid month
@@ -107,7 +106,7 @@
           </div>
 
           <div class="col-9 ms-5">
-            <button type="submit" class="btn btn-primary w-100 my-4">Confirm</button>
+            <a type="submit" href="complete.html" class="btn btn-primary w-100 my-4">Confirm</a>
           </div>
         </div>
       </form>
