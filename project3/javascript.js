@@ -62,6 +62,10 @@ function updateCard() {
   })()
 
 
-function saveFormData() {
-  localStorage.setItem('cardNumber', document.getElementById("inputCardNumber").value)
+function submitForm() {
+  sessionStorage.setItem('cardNumber', inputCardNumber.value);
+  sessionStorage.setItem('cardHolder', inputCardHolder.value);
+  sessionStorage.setItem('inputMonth', inputMonth.value);
+  sessionStorage.setItem('inputYear', inputYear.value);
+  sessionStorage.setItem('inputCvc', inputCvc.value);
 }
