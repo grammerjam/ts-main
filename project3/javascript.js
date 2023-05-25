@@ -6,11 +6,11 @@ var inputYear = document.getElementById("inputYear");
 var inputCvc = document.getElementById("inputCvc");
  
 // add listeners to input-form elements
-inputCardNumber.addEventListener("keypress", updateCard);
-inputCardHolder.addEventListener("keypress", updateCard);
-inputMonth.addEventListener("keypress", updateCard);
-inputYear.addEventListener("keypress", updateCard);
-inputCvc.addEventListener("keypress", updateCard);
+inputCardNumber.addEventListener("input", updateCard);
+inputCardHolder.addEventListener("input", updateCard);
+inputMonth.addEventListener("input", updateCard);
+inputYear.addEventListener("input", updateCard);
+inputCvc.addEventListener("input", updateCard);
 
 // get card image text elements
 var cardImageNumber = document.getElementById("cardImageNumber");
@@ -23,7 +23,7 @@ var cardImageCvc = document.getElementById("cardImageCvc");
 function updateCard() {
     if(inputCardNumber.value != ""){
       // add spaces every 4 characters in cc field
-      inputCardNumber.value = inputCardNumber.value.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ');
+      inputCardNumber.value = inputCardNumber.value.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ').trim();
       cardImageNumber.innerHTML = inputCardNumber.value;
     }
     if(inputCardHolder.value != ""){

@@ -9,7 +9,7 @@ window.onload = (event) => {
     cardImageNumber.innerHTML = inputCardNumber;
 
     var inputCardHolder = sessionStorage.getItem('cardHolder');
-    cardImageHolder.innerHTML = inputCardHolder;
+    cardImageHolder.innerHTML = inputCardHolder.toUpperCase();
 
     var inputMonth = sessionStorage.getItem('inputMonth');
     cardImageMonth.innerHTML = inputMonth + '/';
