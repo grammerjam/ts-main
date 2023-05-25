@@ -143,9 +143,9 @@ footer{
     text-align: center;
 }
 
-.buttons3{
-    padding-left : 7%;
-    padding-right: 10%;
+.comeplete-form{
+    margin-left: 40%;
+    margin-top: 270px;
 }
 
 @media screen and ( max-width: 768px) {
@@ -153,4 +153,12 @@ footer{
         margin-left: 15%;
         justify-content: center;
     }
+
+    .comeplete-form{
+        margin-left: 5%;
+        justify-content: center;
+        margin-top: 100px;
+        
+    }
+
 }
