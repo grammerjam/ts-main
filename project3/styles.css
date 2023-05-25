@@ -125,22 +125,13 @@ body{
 
 form {
     margin-top: 200px;
-    margin-left: 30%;
+    margin-left: 33%;
 }
 
 .btn-primary {
     background-color: hsl(278, 68%, 11%) !important;
     border-color: hsl(278, 68%, 11%) !important;
     
-}
-
-.yearComponent{
-    margin-left: -3% !important; 
-}
-
-.CvcComponent{
-    margin-left: -3% !important; 
-
 }
 
 .form-label {
@@ -152,7 +143,22 @@ footer{
     text-align: center;
 }
 
-.buttons3{
-    padding-left : 7%;
-    padding-right: 10%;
+.comeplete-form{
+    margin-left: 40%;
+    margin-top: 270px;
+}
+
+@media screen and ( max-width: 768px) {
+    form{
+        margin-left: 15%;
+        justify-content: center;
+    }
+
+    .comeplete-form{
+        margin-left: 5%;
+        justify-content: center;
+        margin-top: 100px;
+        
+    }
+
 }
