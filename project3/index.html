@@ -12,23 +12,13 @@
 
 
 <!-- 
-  TODO: -Fix button layout
-        -Make form center
-        -Fix gradiant to be viewed in mobile view
-        -add validation using bootstrap
+  TODO:  -add validation using bootstrap
         -add logo(maybe)
-        -add second page for confirmation
 -->
 
-<!-- 
-  Helpful liks
-  https://getbootstrap.com/docs/5.3/layout/breakpoints/
-  https://getbootstrap.com/docs/5.3/forms/layout/
-  https://getbootstrap.com/docs/5.3/forms/validation/
 
-
- -->
 <body>
+  <!-- Container start for bootstrap -->
   <div class="container-fluid">
     <div class="row">
       <div class="col position-absolute d-flex justify-content-center">
@@ -38,11 +28,11 @@
 
     <div class="row">
       <!-- column for gradiant -->
-      <!-- TIP: add a class to div to style content -->
       <div class="col-md-4 order-md-1 g-0 ">
         <img src="images/bg-main-desktop.png" class="img-fluid float-start d-none d-md-block" alt="">
         <img src="images/bg-main-mobile.png" class="d-none d-sm-block d-md-none img-fluid w-100 float-start " alt="">
 
+        <!-- column for front card image -->
         <div class="col-md-4 ms-3  order-md-2">
           <img src= "images/bg-card-front.png" id="cardFront">
           <p id ="cardImageNumber">0000 0000 0000 0000</p>
@@ -52,54 +42,56 @@
           <p class = "bigCircle"></p>
           <p class = "smallCircle"></p>
         </div>
+
+        <!-- column for back card image -->
         <div class="col-md-4 order-md-3">
           <img src = "images/bg-card-back.png" id="cardBack">
           <p id ="cardImageCvc">000</p>
         </div>    
       </div>
 
-            <!-- column for forum  -->
+        <!-- column for forum  -->
       <div class="col-md-6 order-md-2 ms-xl-5 ms-md-5 pe-sm-5 ">
         <form class="needs-validation " onsubmit="submitForm()" novalidate>
           
             <label for="inputCardHolder" class="form-label ms-5">CARDHOLDER NAME</label>
-            <input type="text" class="form-control w-75 ms-5" placeholder="e.g Jane Appleseed" id="inputCardHolder" maxlength="40" required>
+            <input type="text" class="form-control w-75 ms-5" placeholder="e.g Jane Appleseed" id="inputCardHolder" maxlength="40" pattern="^[A-Za-z\s'-]+$" required>
             <div class="invalid-feedback ms-5">
               Please input first and last name
             </div>
          
-          
           <label for="inputCardNumber" class="form-label ms-5">CARD NUMBER</label>
-          <input type="text" class="form-control w-75 ms-5" placeholder=" e.g. 1234 5678 9123 0000" id="inputCardNumber" maxlength="19" required>
+          <input type="text" class="form-control w-75 ms-5" placeholder=" e.g. 1234 5678 9123 0000" id="inputCardNumber" maxlength="19" pattern="^\d{12,19}$" required>
           <div class="invalid-feedback ms-5">
             Please input a valid card number
           </div>
 
+        <!-- container for 3 input  -->
           <div class="container-fluid">
-            <div class="row row-cols-3  g-0 buttons3 ">
-              <div class="col g-0 ">
+            <div class="row row-cols-1">
+              <div class="col-3 g-0 ">
             
-                <label for="inputDate" class="form-label ">EXP.DATE</label>
-                <input type="text" class="form-control " placeholder="MM" id="inputMonth" maxlength="2" required>
+                <label for="inputDate" class="form-label ms-5">EXP.DATE</label>
+                <input type="text" class="form-control w-75 ms-5" placeholder="MM" id="inputMonth" maxlength="2" required>
 
-                <div class="invalid-feedback">
+                <div class="invalid-feedback ms-5">
                   Invalid month
                 </div>
               </div>
 
-              <div class="col g-0">
+              <div class="col-3 g-0">
                 
-                <label for="inputYear" class="form-label ">(MM/YY)</label>
-                <input type="text" class="form-control " placeholder="YY" id="inputYear" maxlength="2" required>
-                <div class="invalid-feedback">
+                <label for="inputYear" class="form-label ms-5 ">(MM/YY)</label>
+                <input type="text" class="form-control w-75 ms-5 " placeholder="YY" id="inputYear" maxlength="2" required>
+                <div class="invalid-feedback ms-4">
                   Invalid year
                 </div>
               </div>
                 
-                <div class="col g-0">
-                  <label for="inputCvc" class="form-label ">CVC</label>
-                  <input type="text" class="form-control " placeholder="e.g. 123" id="inputCvc" maxlength="3" required>
-                  <div class="invalid-feedback">
+                <div class="col-4 g-0">
+                  <label for="inputCvc" class="form-label ms-5">CVC</label>
+                  <input type="text" class="form-control w-75 ms-5" placeholder="e.g. 123" id="inputCvc" maxlength="3" required>
+                  <div class="invalid-feedback ms-5">
                     Invalid CVC
                   </div>
                 </div>
@@ -107,8 +99,9 @@
             </div>
           </div>
 
+          <!-- Button for submit -->
           <div class="col-9 ms-5">
-            <a type="submit" href="complete.html" class="btn btn-primary w-100 my-4">Confirm</a>
+            <!-- <a type="submit" href="complete.html" class="btn btn-primary w-100 my-4">Confirm</a> -->
             <button type="submit" href="complete.html" class="btn btn-primary w-100 my-4">Confirm</button>
 
           </div>
