@@ -188,81 +188,66 @@ footer{
         margin-top: 5%;
         left: 50%;
         top: 150px;
-        z-index: 3;
+        z-index: 3;     
+        
     }
     
     #cardBack {
         margin-left: 20%;
         margin-top: 5%;
+        top: 57px;
         z-index: 2;
         top: 57px;
     }
     
-    #cardImageNumber {   
-        color: white;
+    #cardImageNumber {
         margin-top: 5%; 
-        letter-spacing: .19em;
+        margin-left: 52%;
+        z-index: 4;
+        top: 240px;
+        
+    }
+    
+    #cardImageHolder {
+        top: 280px; 
+        margin-top: 5%;
+        z-index: 4;
+        margin-left: 52%;
+    }
+    
+    #cardImageMonth {
+        top: 280px;
+        margin-top: 5%;
+        margin-left: 50%;  
+        z-index: 4;
+    }
+    
+    #cardImageYear {
+        top: 280px;
+        margin-top: 5%;
         margin-left: 50%;
         z-index: 4;
     }
     
-    #cardImageHolder {
-        position: absolute; 
-        left: 33.33333333%; 
-        color: white; 
-        top: 265px; 
-        font-size: .6em;
-        transform: translate(-245%);
-    }
-    
-    #cardImageMonth {
-        position: absolute;
-        left: 33.33333333%;
-        color:white;
-        top: 265px;
-        font-size: .6em;
-        transform: translate(30px);
-    }
-    
-    #cardImageYear {
-        position: absolute;
-        left: 33.33333333%;
-        color:white;
-        top: 265px;
-        font-size: .6em;
-        transform: translate(47px);
-    }
-    
     #cardImageCvc {
-        position: absolute;
-        left: 33.33333333%;
-        top: 370px;
-        color: white;
-        transform: translate(0px);
+        top: 126px;
+        margin-top: 5%;
+        margin-left: 55%;
+        z-index: 3;
     }
     
     .bigCircle {
-        position: absolute;
-        height: 28px;
-        width: 28px;
-        margin-top: 150px;
-        left: 33.33333333%;
-        background-color: white;
-        border-radius: 50%;
-        transform: translateX(-670%);
-      }
+       top: 170px;
+       margin-top: 5%;
+       margin-left: 50%;
+       z-index: 3;
+    }
     
       .smallCircle {
-        position: absolute;
-        height: 13px;
-        width: 13px;
-        margin-top: 157px;
-        left: 33.33333333%;
-        border-radius: 50%;
-        border-width: 1px;
-        border-color: white;
-        border-style: solid;
-        transform: translateX(-153px);
+        top: 180px;
+        margin-top: 5%;
+        margin-left: 51%;
+        z-index: 3;
       }
 
 }
