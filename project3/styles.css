@@ -278,7 +278,7 @@ footer{
 /*large screens*/
 @media screen and ( min-width: 1466px) {  
 
-    form {
+    /* form {
         position: absolute;
         margin-left: 185px !important;
         left: 500px;
@@ -289,7 +289,7 @@ footer{
         text-align: left;
         left: 500px;
         margin-left: 185px !important;
-    }
+    } */
 
     /*card*/
     #cardFront {
