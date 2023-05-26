@@ -133,17 +133,26 @@ body{
     transform: translateX(-153px);
   }
 
+  #company {
+    width: 40px;
+    position: absolute;
+    display: inline-block;
+    top: 150px;
+    margin-left: 38px;
+  }
+
+
 /*FORM*/
 
 form {
     margin-top: 200px;
     margin-left: 33%;
+    min-width: 350px;
 }
 
 .btn-primary {
     background-color: hsl(278, 68%, 11%) !important;
     border-color: hsl(278, 68%, 11%) !important;
-    
 }
 
 .form-label {
@@ -155,11 +164,12 @@ footer{
     text-align: center;
 }
 
-.comeplete-form{
+.complete-form{
     margin-left: 40%;
     margin-top: 270px;
 }
 
+/*MOBILE*/
 @media screen and ( max-width: 767px) {  
      
     #logoContainer{
@@ -167,29 +177,32 @@ footer{
     }
 
     #logoContainer img {
-        margin-left: 20%;
+        margin-left: 10%;
     }
 
     /* form */
     form{
-        margin-left: 15%;
+        margin: 10% auto;
         justify-content: center;
-        margin-top: -30px;
     }
 
-    .comeplete-form{
+    .complete-form{
         margin-left: 5%;
         justify-content: center;
         margin-top: 100px;
     }
-    
+
     /* cards */
+
+    .h-60 {
+        height: 300px !important;
+    }
+
     #cardFront {
         margin-top: 5%;
         left: 50%;
         top: 150px;
         z-index: 3;     
-        
     }
     
     #cardBack {
@@ -199,15 +212,15 @@ footer{
         z-index: 2;
         top: 57px;
     }
-    
+
     #cardImageNumber {
         margin-top: 5%; 
         margin-left: 52%;
         z-index: 4;
         top: 240px;
-        
+        min-width: 500px;
     }
-    
+
     #cardImageHolder {
         top: 280px; 
         margin-top: 5%;
@@ -249,21 +262,32 @@ footer{
         margin-left: 51%;
         z-index: 3;
       }
-
+    
+    #company {
+        margin-top: 5%;
+        width: 40px;
+        position: absolute;
+        display: inline-block;
+        top: 160px;
+        left: 35px;
+        margin-left: 51%;
+        z-index: 3;
+    }
 }
 
+/*large screens*/
 @media screen and ( min-width: 1466px) {  
 
     form {
         position: absolute;
         margin-left: 185px !important;
-        left: 700px;
+        left: 500px;
     }
 
     #logoContainer {
         position: absolute;
         text-align: left;
-        left: 800px;
+        left: 500px;
         margin-left: 185px !important;
     }
 

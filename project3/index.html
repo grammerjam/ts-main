@@ -20,8 +20,7 @@
       <!-- column for gradiant -->
       <div class="col-md-4 g-0">
         <img src="images/bg-main-desktop.png" class="img-fluid float-start d-none d-md-block">
-        <img src="images/bg-main-mobile.png" class="d-none d-sm-block d-md-none img-fluid w-100 float-start h-75">
-
+        <img src="images/bg-main-mobile.png" class="d-sm-block d-md-none img-fluid w-100 float-start h-60 mobileGrad">
         <!-- column for front card image -->
         <div class="col-md-4 ms-3">
           <img src= "images/bg-card-front.png" id="cardFront">
@@ -31,6 +30,7 @@
           <p id ="cardImageYear">00</p>
           <p class = "bigCircle"></p>
           <p class = "smallCircle"></p>
+          <img src="" id= "company">
         </div>
 
         <!-- column for back card image -->
@@ -46,14 +46,14 @@
           
           <!-- card holder name -->
             <label for="inputCardHolder" class="form-label ms-5">CARDHOLDER NAME</label>
-            <input type="text" class="form-control w-75 ms-5" placeholder="e.g Jane Appleseed" id="inputCardHolder" maxlength="40" pattern="^[a-z]+(?:\s[a-z]+)+$" required>
+            <input type="text" class="form-control w-75 ms-5" placeholder="e.g Jane Appleseed" id="inputCardHolder" maxlength="40" pattern="^([a-zA-Z]{1,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{1,}\s?([a-zA-Z]{1,})?)" required>
             <div class="invalid-feedback ms-5">
               Please input first and last name
             </div>
          
           <!-- card number -->
           <label for="inputCardNumber" class="form-label ms-5">CARD NUMBER</label>
-          <input type="text" class="form-control w-75 ms-5" placeholder=" e.g. 1234 5678 9123 0000" id="inputCardNumber" maxlength="19" pattern="^\b(?:\d[ -]*?){13,16}\b$"  required>
+          <input type="text" class="form-control w-75 ms-5" placeholder=" e.g. 1234 5678 9123 0000" id="inputCardNumber" maxlength="19" pattern="^[0-9\s]{13,19}$"  required>
           <div class="invalid-feedback ms-5">
             Please input a valid card number
           </div>
