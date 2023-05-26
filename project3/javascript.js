@@ -5,6 +5,9 @@ var inputMonth = document.getElementById("inputMonth");
 var inputYear = document.getElementById("inputYear");  
 var inputCvc = document.getElementById("inputCvc");
  
+// get cc company img element
+var ccComapny = document.getElementById("company");
+
 // add listeners to input-form elements
 inputCardNumber.addEventListener("input", updateCard);
 inputCardHolder.addEventListener("input", updateCard);
@@ -25,6 +28,34 @@ function updateCard() {
       // add spaces every 4 characters in cc field
       inputCardNumber.value = inputCardNumber.value.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ').trim();
       cardImageNumber.innerHTML = inputCardNumber.value;
+    }
+    // amex card rules
+    if(inputCardNumber.value[0] == "3"){
+      ccComapny.src="images/amex-logo.png";
+      inputCvc.setAttribute("pattern","^[0-9][0-9][0-9][0-9]$");
+      inputCvc.setAttribute("maxlength", 4);
+      inputCvc.setAttribute("placeholder", "e.g. 1234");
+      inputCardNumber.setAttribute("maxlength", 18);
+      inputCardNumber.setAttribute("pattern", "^([0-9 ]{18})$");
+      inputCardNumber.setAttribute("placeholder", "e.g. 1234 5678 9123 000");
+      // visa card rules
+    } else if (inputCardNumber.value[0] == "4"){
+      ccComapny.src="images/visa-logo.png";
+      inputCvc.setAttribute("pattern","^[0-9][0-9][0-9]$");
+      inputCvc.setAttribute("maxlength", 3);
+      inputCardNumber.setAttribute("maxlength", 19);
+      inputCardNumber.setAttribute("pattern", "^([0-9 ]{16,19})$");
+      inputCardNumber.setAttribute("placeholder", "e.g. 1234 5678 9123 0000");
+      inputCvc.setAttribute("placeholder", "e.g. 123");
+      // generic card rules
+    } else {
+      ccComapny.src="";
+      inputCvc.setAttribute("pattern","^[0-9][0-9][0-9]$");
+      inputCvc.setAttribute("maxlength", 3);
+      inputCardNumber.setAttribute("maxlength", 19);
+      inputCardNumber.setAttribute("pattern", "^([0-9 ]{19})$");
+      inputCardNumber.setAttribute("placeholder", "e.g. 1234 5678 9123 0000");
+      inputCvc.setAttribute("placeholder", "e.g. 123");
     }
     if(inputCardHolder.value != ""){
       cardImageHolder.innerHTML = inputCardHolder.value.toUpperCase();
