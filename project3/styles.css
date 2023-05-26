@@ -251,3 +251,56 @@ footer{
       }
 
 }
+
+@media screen and ( min-width: 1466px) {  
+
+    form {
+        position: absolute;
+        margin-left: 185px !important;
+        left: 700px;
+    }
+
+    #logoContainer {
+        position: absolute;
+        text-align: left;
+        left: 800px;
+        margin-left: 185px !important;
+    }
+
+    /*card*/
+    #cardFront {
+        left: 485px;
+    }
+    
+    #cardBack {
+        left: 485px;
+    }
+    
+    #cardImageNumber {
+        margin-left: 485px; 
+    }
+    
+    #cardImageHolder {
+        margin-left: 485px; 
+    }
+    
+    #cardImageMonth {
+        margin-left: 485px; 
+    }
+    
+    #cardImageYear {
+        margin-left: 485px; 
+    }
+    
+    #cardImageCvc {
+        margin-left: 485px; 
+    }
+    
+    .bigCircle {
+    margin-left: 485px; 
+    }
+    
+    .smallCircle {
+    margin-left: 485px; 
+    }
+}
