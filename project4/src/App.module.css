@@ -1,0 +1,19 @@
+/* Imported font */
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url(/project4/src/assets/SpaceGrotesk-VariableFont_wght.ttf)
+}
+
+/* Global font size */
+*{
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+}
+
+body{
+  font-size: 18px;
+}
+
+.test{
+  text-align: center;
+}
