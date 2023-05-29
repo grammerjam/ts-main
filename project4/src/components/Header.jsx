@@ -1,6 +1,14 @@
 function Header(){
     return (
-        <h1 >Team Spark rules</h1>
+        <>
+        <div className="container">
+            <div className="row text-center">
+                <div className="col">
+                    <img class="img-fluid w-50 " src="/src/assets/images/Team_spark_black.png" alt="" />
+                </div>
+            </div>
+        </div>
+        </>
         )
 }
 
