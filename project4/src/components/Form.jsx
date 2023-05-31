@@ -2,6 +2,11 @@ import Inputs from "./Inputs"
 
 
 function Form(){
+
+    // function handleChange(event) {
+    //     console.log(event.target.name);
+    //   }
+
     return(
         <>
             <div className="col-8 ">

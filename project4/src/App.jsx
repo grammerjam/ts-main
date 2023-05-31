@@ -1,6 +1,6 @@
 import Form from './components/Form';
 import Header from './components/Header';
-
+import Card from './components/Card';
 
 function App() {
   
@@ -15,9 +15,8 @@ function App() {
         <img className="img-fluid float-start vh-100 w-100 position-relative" src="./src/assets/images/bg-main-desktop.png" alt="" />
 
         </div>
-
-        <Form/>
-
+      <Form/>
+      <Card/>
       </div>
     </div>
     <footer className="text-center">
