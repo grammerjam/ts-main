@@ -14,16 +14,73 @@
     position: absolute;
     width: 350px;
     left: 33%;
-    margin-left: -200px;
+    margin-left: -150px;
     top: 200px;
 }
 
 .cardText {
     left: 33%;
-    top: 40px;
     position: absolute;
     color: white;
-    width: 300px;
+    width: 350px;
+    height: 190px;
     margin-left: -200px;
-    text-align: center;
+}
+
+.cardText p {
+    margin: 0px;
+}
+
+.cardImageName {
+    position: absolute;
+    bottom: 6px;
+    left: 15px;
+    font-size: 12px;
+}
+
+.cardImageNumber {
+    position: absolute;
+    top: 110px;
+    left: 15px;
+    letter-spacing: 4px;
+}
+
+.cardImageDate {
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+}
+
+.cardImageDate p {
+    display: inline;
+    font-size: 12px;
+}
+
+.smallCircle {
+    position: absolute;
+    left: 60px;
+    top: 23px;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+}
+
+.bigCircle {
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    height: 28px;
+    width: 28px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.cardImageCompany {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 70px;
 }

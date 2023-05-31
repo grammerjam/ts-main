@@ -3,7 +3,7 @@ function Label(props){
     return (
         <>
             <label htmlFor={props.label} className={props.className}> 
-                test {props}
+                test
             </label>
         </>
     );
