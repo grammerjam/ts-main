@@ -1,7 +1,7 @@
 /* Imported font */
 @font-face {
   font-family: 'Space Grotesk';
-  src: url(/project4/src/assets/SpaceGrotesk-VariableFont_wght.ttf)
+  src: url(/src/assets/SpaceGrotesk-VariableFont_wght.ttf)
 }
 
 /* Global font size */
