@@ -1,24 +1,29 @@
 .cardContainer {
     position: absolute;
-    top: 50px;
-    width: 50%;
+    top: 200px;
 }
 
 .cardFront {    
+    position: absolute;
     width: 350px;
     left: 33%;
+    margin-left: -200px;
 }
 
 .cardBack {
+    position: absolute;
     width: 350px;
     left: 33%;
+    margin-left: -200px;
     top: 200px;
 }
 
 .cardText {
+    left: 33%;
     top: 40px;
     position: absolute;
     color: white;
     width: 300px;
+    margin-left: -200px;
     text-align: center;
 }
