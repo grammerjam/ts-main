@@ -1,5 +1,6 @@
 import Inputs from "./Inputs"
 
+
 function Form(){
 
     // function handleChange(event) {
@@ -8,7 +9,7 @@ function Form(){
 
     return(
         <>
-            <div className="col-8">
+            <div className="col-8 ">
                 <form action="" className="needs-validation">
                     <Inputs type="text"/> 
                     <Inputs type="text"/> 
