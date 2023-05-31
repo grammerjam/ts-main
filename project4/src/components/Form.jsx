@@ -1,9 +1,10 @@
 import Inputs from "./Inputs"
 
+
 function Form(){
     return(
         <>
-            <div className="col-8">
+            <div className="col-8 ">
                 <form action="" className="needs-validation">
                     <Inputs type="text"/> 
                     <Inputs type="text"/> 
