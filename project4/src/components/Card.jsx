@@ -17,6 +17,7 @@ function Card(){
                 <img className= {styles.cardImageCompany} src="./src/assets/images/visa-logo.png"/>
             </div>
             <img className = {styles.cardBack} src = "./src/assets/images/bg-card-back.png"/>
+            <p className = {styles.cardImageCvc}>000</p>
         </div>
         </>
         )

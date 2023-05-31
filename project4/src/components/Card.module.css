@@ -45,6 +45,14 @@
     letter-spacing: 4px;
 }
 
+.cardImageCvc {
+    position: absolute;
+    left: 33%;
+    margin-left: 120px;
+    top: 280px;
+    color:white;
+}
+
 .cardImageDate {
     position: absolute;
     bottom: 5px;
