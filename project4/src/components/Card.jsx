@@ -1,23 +1,27 @@
 import styles from './Card.module.css'
+import FrontCard from '../assets/images/bg-card-front.png'
+import BackCard from '../assets/images/bg-card-back.png'
+import Visa from '../assets/images/visa-logo.png'
+import Amex from '../assets/images/amex-logo.png'
 
-function Card(){
+function Card(props){
     return (
         <>
-        <div className = {styles.cardContainer}>
-            <img className = {styles.cardFront} src = "./src/assets/images/bg-card-front.png"/>
-            <div className = {styles.cardText}> 
-                <p className = {styles.cardImageNumber}>0000 0000 0000 0000</p>
-                <p className = {styles.cardImageName}>JANE APPLESEED</p>
-                <div className = {styles.cardImageDate}>
-                    <p className = {styles.cardImageMonth}>00/</p>
-                    <p className = {styles.cardImageYear}>00</p>
+        <div class = {styles.cardContainer}>
+            <img class = {styles.cardFront} src = {FrontCard}/>
+            <div class = {styles.cardText}> 
+                <p class = {styles.cardImageNumber}>{props.infomation ? props.infomation : "0000 0000 0000 0000"}</p>
+                <p class = {styles.cardImageName}>JANE APPLESEED</p>
+                <div class = {styles.cardImageDate}>
+                    <p class = {styles.cardImageMonth}>00/</p>
+                    <p class = {styles.cardImageYear}>00</p>
                 </div>
-                <span className = {styles.bigCircle}></span>
-                <span className = {styles.smallCircle}></span>
-                <img className= {styles.cardImageCompany} src="./src/assets/images/visa-logo.png"/>
+                <span class = {styles.bigCircle}></span>
+                <span class = {styles.smallCircle}></span>
+                <img class= {styles.cardImageCompany} src={Visa}/>
             </div>
-            <img className = {styles.cardBack} src = "./src/assets/images/bg-card-back.png"/>
-            <p className = {styles.cardImageCvc}>000</p>
+            <img class = {styles.cardBack} src = {BackCard}/>
+            <p class = {styles.cardImageCvc}>000</p>
         </div>
         </>
         )

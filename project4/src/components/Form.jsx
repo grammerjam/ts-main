@@ -1,42 +1,51 @@
 import Inputs from "./Inputs"
-import Test from "./Test";
+import logo from '../assets/images/Team_spark_black.png'
 
 
-function Form(props){
+function Form(){
 
-    function handleChange() {
-        console.log("function used");
-      }
 
     return(
         <>
-            <div class="col-8 ">
-                
-                <p onClick={handleChange}>TESTESTESTSESTSTESETSET</p>
+            <div class="col-8">
+                <img src={logo} alt="" />
 
                 <form action="" class="needs-validation">
+                    <Inputs id="inputCardHolder"
+                        name="CARDHOLDER NAME"
+                        maxLength="40" 
+                        placeholder="e.g Jane Appleseed"
+                    />
+                    <Inputs id="inputCardNumber"
+                        name="CARD NUMBER"
+                        maxLength="19" 
+                        placeholder="e.g 1234 5678 9123 0000"
+                    />
+
+                    <div className="row ">
+                        <div className="col">
+                            <Inputs id="inputMonth"
+                                name="EXP. DATE"
+                                maxLength="2" 
+                                placeholder="MM"
+                            />
+                            <Inputs id="inputYear"
+                                name="(MM/YY)"
+                                maxLength="2" 
+                                placeholder="YY"
+                            />
+                            <Inputs id="inputCvc"
+                                name="CVC"
+                                maxLength="3" 
+                                placeholder="e.g 123"
+                            />
+                        </div>
+                    </div>
                     
-
-                    <Test>
-                        <label for="inputCardHolder" class="form-label ms-5">CARDHOLDER NAME</label>
-                        <input type="text" class="form-control w-75 ms-5" placeholder="e.g Jane Appleseed" id="inputCardHolder" maxlength="40" pattern="^([a-zA-Z]{1,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{1,}\s?([a-zA-Z]{1,})?)" required/>
-                        <div class="invalid-feedback ms-5">
-                            Please input first and last name  
-                        </div>
-                    </Test>
-
-                    <Test>
-                        <label for="inputCardHolder" class="form-label ms-5">hsgavsdjdjhE</label>
-                        <input type="text" class="form-control w-75 ms-5" placeholder="e.g Jane Appleseed" id="inputCardHolder" maxlength="40" pattern="^([a-zA-Z]{1,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{1,}\s?([a-zA-Z]{1,})?)" required/>
-                        <div class="invalid-feedback ms-5">
-                            Please input first and last name
-                        </div>
-                    </Test>
+                    
                 </form>
-                <button class="btn btn-primary">confirm</button>
-                {/* <div class={props.class}> jshbfksjksjdksj</div> */}
-            </div>
-
+                
+            </div>          
 
         </>
     )
