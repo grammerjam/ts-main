@@ -1,31 +1,27 @@
+import { createSignal } from "solid-js";
+import Card from "./Card";
 
-function Label(props){
-    return (
-        <>
-            <label htmlFor={props.label} className={props.className}> 
-                test
-            </label>
-        </>
-    );
-}
 
 
 function Inputs(props){
+    const [info, setInfo] = createSignal("");
+
     return (
         <>
-            <div className="col">
-                <Label label={"inputcard"} className={"form-label text-center"} />
-                <input 
-                    type={props.type} 
-                    className={"form-control"} 
-                    // placeholder={props.placeholder}
-                    // maxLength={props.maxLength}
-
-                />
-                
-            </div>
+            <label htmlFor={props.id}  class={"form-label"}> {props.name} </label>
+            <input 
+                type="text"
+                class={"form-control"} 
+                id={props.id}
+                placeholder={props.placeholder}
+                maxLength={props.maxLength}
+                required
+                value={info()}
+                onInput={(event) => setInfo( event.target.value )}
+            />                
         </>
     );
+
 }
 
 export default Inputs;

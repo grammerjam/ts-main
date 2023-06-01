@@ -1,7 +1,7 @@
 function Header(){
     return (
         <>
-            <div className="col text-center">
+            <div class="col text-center">
             </div>
         </>
         );
