@@ -1,3 +1,4 @@
+import styles from './Form.module.css'
 import Inputs from "./Inputs"
 import logo from '../assets/images/Team_spark_black.png'
 
