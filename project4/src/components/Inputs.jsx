@@ -1,8 +1,15 @@
 import { createSignal } from "solid-js";
+import { useCardContext } from "../context/CardContext";
+
 
 function Inputs(props){
     // signal to get info from ith input tag
     const [info, setInfo] = createSignal("");
+    const {items,setItems} = useCardContext()
+
+    // const addItems = () =>{
+
+    // }
 
     return (
         <>
@@ -28,5 +35,8 @@ function Inputs(props){
     );
 
 }
+
+
+
 
 export default Inputs;

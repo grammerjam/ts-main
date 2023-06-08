@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './index.css';
 import App from './App';
 import { Router } from '@solidjs/router';
+import { CardContextProvider } from './context/CardContext';
 
 const root = document.getElementById('root');
 
@@ -14,4 +15,4 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   );
 }
 
-render(() => <Router> <App /> </Router>, root);
+render(() => <Router> <CardContextProvider> <App /> </CardContextProvider> </Router>, root);
