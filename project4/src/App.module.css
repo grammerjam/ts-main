@@ -1,0 +1,9 @@
+.logo{
+    margin-right: 1000px;
+}
+
+@media (max-width: 768px) {
+    .logo{
+        text-align: center;
+    }
+}
