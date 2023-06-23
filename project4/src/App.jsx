@@ -6,6 +6,15 @@ import Home from './pages/Home';
 import Complete from './pages/Complete';
 import logo from './assets/images/Team_spark_black.png'
 import styles from './App.module.css'
+import { createSignal } from 'solid-js';
+
+export const [cardInfo, setCardInfo] = createSignal({
+  name:"",
+  number:"",
+  month: "",
+  year:"",
+  cvc:""
+});
 
 
 function App() {
@@ -20,12 +29,14 @@ function App() {
 
         <div class="row">
           <div class="col-md-4 g-0">
-            {/* images anf graident  */}
+            {/* images and graident  */}
             <img class="img-fluid float-start d-none d-md-block" src={DesktopGradiant} />
             <img class="img-fluid float-start d-sm-block d-md-none w-100 h-75" src={MobileGraidiant} />
           </div>
           
-          <Card/>
+          <Card cardInfo={cardInfo}
+                
+          />
 
           {/* Routes for home and completed pages */}
           <Routes>

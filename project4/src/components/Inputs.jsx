@@ -1,19 +1,17 @@
 import { createSignal } from "solid-js";
 import { useCardContext } from "../context/CardContext";
-
+import {cardInfo, setCardInfo} from "../App"
 
 function Inputs(props){
     // signal to get info from ith input tag
-    const [info, setInfo] = createSignal("");
     const {items,setItems} = useCardContext()
+    const [info, setInfo] = createSignal("");
 
-    // const addItems = () =>{
-
-    // }
+    setItems(info)
 
     return (
         <>
-            <label htmlFor={props.id} class={"form-label ms-5"}> {props.name} {info} </label>
+            <label htmlFor={props.id} class={"form-label ms-5"}> {props.name}  </label>
             <input
             // input for props  
                 type="text"
@@ -35,8 +33,5 @@ function Inputs(props){
     );
 
 }
-
-
-
 
 export default Inputs;
