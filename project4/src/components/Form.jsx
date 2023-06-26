@@ -1,14 +1,19 @@
 import styles from './Form.module.css'
 // import Inputs from "../components/Inputs"
 import { A } from '@solidjs/router'
-import Card from './Card'
-import { createSignal } from "solid-js";
+import { createSignal } from "solid-js"; 
+import {useForm} from "../components/Validation";
+
 
 export const [cardName, setCardName] = createSignal("Jane Appleseed");
 export const [cardNumber, setCardNumber] = createSignal("0000 0000 0000 0000");
 export const [cardMonth, setCardMonth] = createSignal("00");
 export const [cardYear, setCardYear] = createSignal("00");
 export const [cardCvc, setCardCvc] = createSignal("000");
+
+
+const ErrorMessage = (props) => <span class="error-message">{props.error}</span>;
+
 
 function Form() {
 
@@ -46,8 +51,8 @@ function Form() {
                         <div className="row row-cols-1">
 
                             {/* month */}
-                            <label class="form-label ms-5"> EXP.DATE </label>
                             <div className="col-3 ">
+                            <label class="form-label ms-5">EXP.DATE</label>
                                 <input id="inputMonth"
                                     class="form-control w-75 ms-5"
                                     maxLength="2"
@@ -59,8 +64,8 @@ function Form() {
                             </div>
 
                             {/* Year */}
-                            <label class="form-label ms-5"> (MM/YY) </label>
                             <div className="col-3">
+                            <label class="form-label ms-5">(MM/YY)</label>
                                 <input id="inputYear"
                                     class="form-control w-75 ms-5"
                                     maxLength="2"
@@ -72,8 +77,8 @@ function Form() {
                             </div>
 
                             {/* CVC */}
-                            <label class="form-label ms-5"> CVC </label>
                             <div className="col-4">
+                            <label class="form-label ms-5">CVC </label>
                                 <input id="inputCvc"
                                     class="form-control w-75 ms-5"
                                     maxLength="3"
