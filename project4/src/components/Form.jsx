@@ -12,7 +12,7 @@ import Amex from '../assets/images/amex-logo.png'
 
 
 // set card number on card and add spaces
-function setCardNumbers(value, code){
+function setCardNumbers(value){
 
     if(value != "") {
         value = value.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ').trim();
@@ -27,6 +27,7 @@ function setCardNumbers(value, code){
     else {
         document.getElementById("cardImg").setAttribute("src", "")
     }
+    setCardNumber(value);
     
 }
 
