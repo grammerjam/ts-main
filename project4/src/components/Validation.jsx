@@ -44,6 +44,7 @@ export function useForm({ errorClass }) {
     ref.onsubmit = async (e) => {
       e.preventDefault();
       let errored = false;
+
       for (const k in fields) {
         const field = fields[k];
         await checkValid(field, setErrors, errorClass)();

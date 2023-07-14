@@ -40,6 +40,10 @@ export const [cardImg, setCardImg] = createSignal("");
 
 
 
+
+const ErrorMessage = (props) => <span class="error-message">{props.error}</span>;
+
+
 function Form() {
 
     const userNameExists = async ({ value }) => {
