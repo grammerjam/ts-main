@@ -5,7 +5,6 @@ import { Routes, Route} from "@solidjs/router"
 import Home from './pages/Home';
 import Complete from './pages/Complete';
 import logo from './assets/images/Team_spark_black.png'
-import styles from './App.module.css'
 import { createSignal } from 'solid-js';
 
 export const [cardInfo, setCardInfo] = createSignal({
@@ -34,8 +33,8 @@ function App() {
             <img class="img-fluid float-start d-sm-block d-md-none w-100 h-75" src={MobileGraidiant} />
           </div>
           
-          <Card cardInfo={cardInfo}
-                
+          <Card 
+            cardInfo={cardInfo}
           />
 
           {/* Routes for home and completed pages */}
