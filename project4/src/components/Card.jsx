@@ -23,8 +23,8 @@ function Card(props){
                 </div>
                 <span class = {styles.bigCircle}></span>
                 <span class = {styles.smallCircle}></span>
-                <img class= {styles.cardImageCompany} id = "cardImg"/>
-            </div>
+                <img class= {styles.cardImageCompany} src={Visa}/>
+            </div> 
             <img class = {styles.cardBack} src = {BackCard}/>
             <p class = {styles.cardImageCvc}>{cardCvc}</p>
         </div>

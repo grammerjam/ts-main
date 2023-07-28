@@ -1,14 +1,10 @@
 import styles from './Form.module.css'
-// import Inputs from "../components/Inputs"
 import { A } from '@solidjs/router'
 import { render } from "solid-js/web";
 import { createSignal } from "solid-js"; 
 import { createStore } from "solid-js/store";
 import {useForm} from "../components/Validation";
-import Card from './Card';
-import Visa from '../assets/images/visa-logo.png'
-import Amex from '../assets/images/amex-logo.png'
-
+import { createStore } from 'solid-js/store';
 
 
 // set card number on card and add spaces
@@ -36,33 +32,26 @@ export const [cardNumber, setCardNumber] = createSignal("0000 0000 0000 0000");
 export const [cardMonth, setCardMonth] = createSignal("00");
 export const [cardYear, setCardYear] = createSignal("00");
 export const [cardCvc, setCardCvc] = createSignal("000");
-export const [cardImg, setCardImg] = createSignal("");
-
-
-
 
 const ErrorMessage = (props) => <span class="error-message">{props.error}</span>;
 
 
 function Form() {
 
-    const userNameExists = async ({ value }) => {
-        const exists = await fetchUserName(value);
-        return exists && `${value} is already being used`;
-        };
-
-        const { validate, formSubmit, errors } = useForm({
-            errorClass: "error-input"
-          });
-
-    const ErrorMessage = (props) => <span class="error-message">{props.error}</span>;
-
+    const {validate, formSubmit, errors} = useForm({errorClass: "error-input"});
+    const [fields, setFields] = createStore();
+    const fn = (form) => {
+       // formSubmit()
+        console.log("done");
+    };
+ 
+ 
     return (
            
         <>
             <div className="col-md-8 px-5">
 
-                <form use:formSubmit action="/new_url" method="POST" class="needs-validation " novalidate>
+                <form use:formSubmit={fn} action="" class="needs-validation " novalidate>
                 <label class="form-label ms-5"> CARDHOLDER NAME </label>
                     {/* Card holder Name */}
                     <input id="inputCardHolder"
@@ -70,12 +59,11 @@ function Form() {
                         maxLength="40"
                         placeholder="e.g Jane Appleseed"
                         pattern="^([a-zA-Z]{1,}\s[a-zA-Z]{1,}'?-?[a-zA-Z]{1,}\s?([a-zA-Z]{1,})?)"
-                        oninput={(event) => setCardName( event.target.value )}
-                        use:validate={[userNameExists]}
-                        required
+                        onInput={(event) => setCardName( event.target.value )}
+                        use:validate
                     />
                     <div class="invalid-feedback ms-5">
-                    "Please input first and last name"
+                        {errors.email && <ErrorMessage error={errors.email} />}
                     </div>
 
                     {/* Card number */}
